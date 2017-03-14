@@ -19,6 +19,6 @@ This Photo Uploader Web APP is designed by Yutong Huang (YutongHuangCMU). The fr
 ## Installation
 1. Please clone the code locally.
 2. Please download and install Node.js following the official guidance at https://nodejs.org/en/.
-3. Please do ```npm install``` on commend line in the repository that you clone the code to.
+3. Please do ```npm install``` on command line in the repository that you clone the code to.
 4. Please substitute the "PLEASE USE DATABASE INFORMATION HERE" in server.js file using the information attached in email.
-5. Please use ```node server.js``` on commend line to run server. The port is on 3000.
+5. Please use ```node server.js``` on command line to run server. The port is on 3000.
