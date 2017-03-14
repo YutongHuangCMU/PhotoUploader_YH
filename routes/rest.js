@@ -1,8 +1,9 @@
 var express = require("express");
+var app = express();
 var router = express.Router();
 var fileService = require("../services/fileService");
 var bodyParser = require("body-parser");
-var jsonParser = bodyParser.json();
+var jsonParser = bodyParser.json({limit: '50mb'});
 var photoModel = require("../models/photoModel");
 
 router.get("/list", function (req, res) {
