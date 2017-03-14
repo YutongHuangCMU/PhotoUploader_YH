@@ -1,0 +1,54 @@
+<br>
+<br>
+<div class="row center">
+    <h3 class="faded-navy-text font-changa-one">Welcome to the PhotoUploader!</h3>
+</div>
+<div class="row">
+    <div class="col s6 offset-s3">
+        <form ng-submit="upload()" class="font-varela-round">
+            <div class="row">
+                <div class="file-field input-field">
+                    <div class="btn punch">
+                        <span>Choose File</span>
+                        <input type="file" ngf-select ng-model="file" />
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" ng-model="fileName"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col s8 offset-s2">
+                    <div class="drop-box valign-wrapper" ngf-drop ngf-select ng-model="dropFile" ngf-drag-over-class="'drag-over'" ngf-multiple="false" ngf-allow-dir="true"
+                         accept="image/*" ngf-pattern="'image/*'">
+                        <div class="row">
+                            <div class="center-align valign">
+                                <h6 class="placeholder" ng-show="!dropped">You can also drag and drop photos here to upload it.</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="center col s12">
+                                <img class="thumbnail" ng-show="dropped" ngf-thumbnail="file">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row center">
+                <button class="btn waves-effect waves-light punch btn-submit" type="submit" name="action">Upload Photo
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>
+        <h6 class="center font-varela-round ocean-breeze-text" ng-show="!hasError">{{message}}</h6>
+        <h6 class="center font-varela-round punch-text" ng-show="hasError">{{err}}</h6>
+        <div class="row center">
+            <form ng-submit="list()" class="font-varela-round">
+                <button class="btn waves-effect waves-light warm btn-submit" type="submit" name="action">See List of Uploaded Photos
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+

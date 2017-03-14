@@ -1,0 +1,28 @@
+{
+  "name": "photouploader_yh",
+  "version": "1.0.0",
+  "description": "a photo uploader has function of uploading photo and view the list of uploaded files.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YutongHuangCMU/PhotoUploader_YH.git"
+  },
+  "author": "Yutong Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YutongHuangCMU/PhotoUploader_YH/issues"
+  },
+  "homepage": "https://github.com/YutongHuangCMU/PhotoUploader_YH#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "file-api": "^0.10.4",
+    "mongoose": "^4.8.7",
+    "ng-file-model": "0.0.5",
+    "ng-file-upload": "^12.2.13"
+  }
+}
