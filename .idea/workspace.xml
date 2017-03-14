@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a217017-abf9-4ef3-a4b9-ae9b0f08fdb1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/images/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/uploaded_photos/balls.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/uploaded_photos/sushi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/uploaded_photos/yakitori.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/PhotoUploader_YH.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/photoModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/js/controllers/homeController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/static/js/controllers/listController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/rest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/fileService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PhotoUploader_YH.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -916,12 +893,12 @@
       <option name="presentableId" value="Default" />
       <updated>1489339152903</updated>
       <workItem from="1489339159882" duration="25255000" />
-      <workItem from="1489426712293" duration="12793000" />
+      <workItem from="1489426712293" duration="13349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38048000" />
+    <option name="totallyTimeSpent" value="38604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
