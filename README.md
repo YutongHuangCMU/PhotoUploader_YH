@@ -2,7 +2,7 @@
 This Photo Uploader Web APP is designed by Yutong Huang (YutongHuangCMU). The framework used is MEAN Stack (MongoDB, Express, AngularJS, NodeJS), follow the MVC pattern. The UI design is based on Materialize.
 
 ## Basic Functionalites
-There are two RESTful API for the service.
+### RESTful API endpoint 
 1. "/photo_uploader_api/v1/upload" used to upload the photo.
     - User can only upload file with type as "image".
     - Photos are identified by names. 
