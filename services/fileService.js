@@ -1,15 +1,19 @@
 var fs = require("fs");
 var photoModel = require("../models/photoModel");
 
+//function used to upload file, write it into local repository and send information to database
 var upload = function (file, callback) {
     var typeData = file.type.split("/");
+    //if the type of file is image, continue to process, otherwise return error.
     if (typeData[0] == "image") {
         var name = "./public/static/uploaded_photos/" + file.name;
         var data = file.data.split(",")[1];
+        //try to find the data in the local repository. If some file with same name already exists, return error.
         fs.stat(name, function(err, stat) {
             if(err == null) {
                 callback("FileExists");
             } else if(err.code == 'ENOENT') {
+                //create new document and save it to the database
                 var newPhoto = new photoModel({
                     name: file.name,
                     data: file.data,
@@ -17,6 +21,7 @@ var upload = function (file, callback) {
                     uploadDate: file.uploadDate
                 });
                 newPhoto.save();
+                //write file to local repository
                 fs.writeFile(name, data, "base64", function (err) {
                     if (err) {
                         callback("Error");
@@ -32,13 +37,15 @@ var upload = function (file, callback) {
         callback("WrongType");
     }
 };
-
+//the function used to get the list of photos.
 var getList = function (callback) {
+    //get three columns in the database.
     photoModel.find({}, "name size uploadDate", function (err, data) {
         if (err) {
             callback(undefined);
             return;
         }
+        //modify the size into normal expression and use another list to store the new data
         var list = [];
         data.forEach(function (record) {
             var photo = {};
